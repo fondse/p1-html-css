@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form action="results.html" method="post">
+            <label for="firstname"> Voornaam </label>
+            <input type="text" name="firstname" id="firstname" placeholder="voornaam" pattern="[^0-9]+" required>
+
+            <label for="firstname"> Achternaam </label>
+            <input type="text" name="firstname" id="firstname" placeholder="achternaam" pattern="[^0-9]+" required>
+    <hr>
+            <label for="gender">Geslacht</label>
+            <hr class="space">
+            <label for="male">Man</label>
+            <input type="radio" name="gender" id="male" required value="male">
+            <label for="female">Vrouw</label>
+            <input type="radio" name="gender" id="female" required value="female">
+    <hr>
+            <label for="adress"> Straat met huisnummer </label>
+            <input name="adress" id="adress" required>
+            <label for="postcode"> Postcode </label>
+            <input name="postcode" id="postcode" required>
+    <hr>
+            <label for="BSN"> BSN-nummer </label>
+            <input name="BSN" id="BSN" pattern="[0-9]{9}" required>
+    <hr>
+            <label for="country_of_destination">Vakantieland</label>
+            <hr class="space">
+            <label for="portugal">Italie</label>
+            <input type="radio" name="country" id="portugal" value="portugal">
+        <hr class="space">
+            <label for="poland">Frankrijk</label>
+            <input type="radio" name="country" id="poland" value="poland">
+        <hr class="space">    
+            <label for="bulgaria">Noorwegen</label>
+            <input type="radio" name="country" id="bulgaria" value="bulgaria">
+    <hr>
+            <label for="date_of_departure"> Datum van vertrek </label>
+            <input type="date" name="date_of_departure" id="date_of_departure" min="2023-09-12" required>
+    <hr class="space">
+            <label for="date_of_return"> Datum van terugkomst </label>
+            <input type="date" name="date_of_return" id="date_of_return" min="2023-09-12" required>
+    <hr class="space">
+            <label for="number_travel_companions"> Aantal reisgenoten (max 4 mensen) </label>
+            <input type="number" name="number_travel_companions" id="number_travel_companions" max="4" min="0" required>
+    <hr>
+            <label for="email"> E-mail </label>
+            <input type="email" name="email" id="email" required value="email">
+    
+            <label for="password"> Wachtwoord </label>
+            <input type="password" name="password" id="password" required value="wachtwoord">
+    
+            <button type="reset" name="reset" id="reset"> Reset </button>
+            <button type="submit" name="submit" id="submit"> Boek nu </button>
+        </form>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
