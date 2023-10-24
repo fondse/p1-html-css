@@ -1,0 +1,22 @@
+body {font-family: 'Times New Roman', Times, serif;}
+
+th {background-color: blue;
+
+}
+
+tbody {
+    background-color: rgba(250, 235, 215, 0.5);
+    
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+header{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
