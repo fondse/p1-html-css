@@ -1,0 +1,36 @@
+h1 {font-size: 24px;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}  
+
+h2 {font-size: 20px;
+    color: #0000ff;
+    font-weight: bold;
+}
+
+h3 {font-size: 16px;
+    color: teal;
+    font-weight: bold;
+}
+
+a {color: #8A2BE2;
+   text-decoration: none;
+
+}
+
+img {
+    width: 50%;
+}
+
+article {
+    border: 2px solid purple; 
+    border-radius: 10px; 
+    border-left-width: 4px; 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
