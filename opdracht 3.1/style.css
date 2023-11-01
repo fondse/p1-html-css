@@ -8,6 +8,8 @@ html {
 }
 body {
   font-family: "Goldman", cursive;
+  min-height: 80vh;
+
 }
 
 nav {
@@ -37,4 +39,31 @@ nav a {
 nav img {
   width: 5vw;
 }
- 
+ .hacker{
+  background-image: url(img/background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ }
+ footer{
+  background-color: #00a8c7;
+  min-height: 10vh;
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+ }
+ .hh{
+  color: white;
+ }
+ h1, h2, h3, h4, h5, h6{
+  font-weight:bold ;
+ }
+ .zwart{
+  background-color: black;
+ }
+ .wit{
+  color: white;
+ }
