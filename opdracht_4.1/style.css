@@ -1,5 +1,5 @@
 h1 {font-size: 24px;
-    color: blue;
+    color: lightgreen;
     font-weight: bold;
     font-style: italic;
 }  
@@ -33,4 +33,19 @@ article {
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    min-height: 35vh;
+    background-color: ;
+    background-image: url(img/plaatje\ 4.2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+p {color:white;
+
+}
+img{
+    width: 50vw;
 }
