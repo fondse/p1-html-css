@@ -9,25 +9,42 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap"
       rel="stylesheet"
-    /><title>Opdracht 5.1</title>
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>Opdracht 5.1</title>
   </head>
-  <body class="hacker">
-    <nav>
-      <img src="./img/hacker.png" id="logo" />
-      <ul>
+
+  <body class="hackerman">
+    <nav class="nav">
+      <a href="./index.html"><img src="./img/hacker.png" id="logo" /> </a>
+      <ul class="navlist">
         <li><a href="html-css.html">HTML/CSS</a></li>
-        <li><a href="javascript.html">Javascript</a></li>
-        <li><a href="php.html">PHP</a></li>
-        <li><a href="sql.html">SQL</a></li>
+        <li><a href="Javascript.html">Javascript</a></li>
+        <li><a href="PHP.html">PHP</a></li>
+        <li><a href="SQL.html">SQL</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a  class="dropbtn">Leerjaar 2</a>
+            <div class="dropdown-content">
+              <a class="dropdownitem" href="OOP">OOP</a>
+              <a class="dropdownitem" href="Laravel">Laravel</a>
+              <a class="dropdownitem" href="Testen">Testen</a>
+            </div>
+          </li>
       </ul>
     </nav>
 
-    <header>
-      <h1 class="hh">First Year TCR Programming Languages</h1>
-    </header>
+    <main>
+      <header>
+        <h1 class="header">
+          First Year TCR <br />
+          Programming Languages
+        </h1>
+      </header>
+    </main>
 
-    <footer>Copyright Techniekcollege Rotterdam</footer>
+    <footer class="footer">
+      <p class="copyright">Copyright Techniek College Rotterdam</p>
+    </footer>
   </body>
 </html>

@@ -7,12 +7,46 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Goldman", cursive;
-  min-height: 100vh;
-
+  font-family: "Goldman";
+  margin: 0;
+  height: 100vh;
 }
 
+.header { position: absolute;
+  text-align: center;
+  font-size: 50px;
+  top: 50%;
+  color: white;
+  width: 100%;    
+
+}
+/* Lettering */
+
+h1 {font: bold;}
+
+/* Footer */
+footer { 
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00a8c7;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+  text-align: center;
+  }
+
+.copyright {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+/* Navbar */
 nav {
+  position: fixed;
   display: flex;
   width: 100%;
   padding: 2rem;
@@ -22,9 +56,6 @@ nav {
   margin: auto;
   background: #00a8c7;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  left 0;
 }
 nav ul {
   display: flex;
@@ -41,41 +72,200 @@ nav a {
 }
 nav img {
   width: 5vw;
+  cursor: pointer;
 }
- .hacker{
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute ;
+  background-color: white;
+  min-width: 20vw;
+  z-index: 1;
+  flex-direction: column;
+  opacity: 0;
+  transition:opacity 200ms ease-in-out;
+  
+}
+
+.dropdown-content a {
+  color: #00a8c7;
+  display: flex;
+  text-align: left;
+  padding: 0.5rem 0.5rem;
+  
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown:hover .dropbtn {
+  display: flex;
+  color: #00a8c7;
+  background-color: white;
+}
+
+.dropdownitem:hover {
+  background-color: #E9E9E9;
+
+}
+
+/*index pagina starts here*/
+.hackerman {
   background-image: url(img/background.jpeg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
- }
- footer{
-  background-color: #00a8c7;
-  min-height: 10vh;
-  text-align: center;
-  color: white;
+  height: 100%;
   width: 100%;
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  padding: 20px;
-  margin: 0px auto;
- }
- .hh{
-  color: white;
- }
- h1, h2, h3, h4, h5, h6{
-  font-weight:bold ;
- }
- .zwart{
-  background-color: black;
- }
- .wit{
-  color: white;
- }
- h1{
+}
+
+/*Changes to all pages*/ 
+.title  { 
   text-align: center;
+  font-size: 50px;
+  width: 100%;
+  padding-top: 3em;
+}
+
+.twenty {
+  font-size: 20px;
+}
+
+.yellow {
+  color: yellow;
+}
+.white { 
+  color: white;
+}
+.blue {
+  color: blue;
  }
- 
+ .orange {
+  color: orange;
+ }
+
+/*HTML pagina starts here*/
+
+ .fullhtmltext {
+  margin-left: 50%;
+  margin-top: 5% ;
+}
+
+.htmltext {
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 15px;
+}
+
+.htmlimage {
+  float: left;
+  width: 33%;
+  height: 33%;
+  padding-right: 0px;
+  margin-left: 10%;;
+}
+
+/*Javascript pagina starts here*/
+
+.mainjavascript {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.javascriptimg {
+  float: right;
+  width: 20%;
+  height: 20%;
+  margin-right: 25%;
+}
+
+.javascripttext {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 15px;
+}
+
+.javascriptalltext {
+  margin-left: 10%;
+  margin-right: 55%;
+  margin-top: 5% ;
+}
 
 
+/*PHP pagina starts here*/
+
+.phpimg {
+  float: left;
+  width: 33%;
+  height: 33%;
+  padding-right: 0px;
+  margin-left: 10%;;
+}
+
+.phptext {
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 15px;
+}
+
+.fullphptext {
+  margin-left: 50%;
+  margin-top: 5% ;
+}
+
+/*SQL pagina starts here*/
+
+.sqlimg {
+  float: right;
+  width: 33%;
+  height: 33%;
+  margin-right: 15%;
+}
+
+.sqltext {
+  color: white;
+  font-size: 15px;
+}
+
+.fullsqltext {
+  padding-top: 50px;
+  padding-left: 159px;
+  padding-right: 700px;
+  padding-bottom: 50px;
+}
+
+/* Contact Form starts here */
+
+form {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-left-width: 2px;
+  border-left-style: solid;
+  padding-top: 5px;
+  padding-left: 550px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-top: 10PX;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.contact {
+  width: 150px;
+  margin: 2px auto;
+}

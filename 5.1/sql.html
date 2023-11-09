@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap"
-    rel="stylesheet"
-  /><title>Opdracht 5.1</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="zwart">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Opdracht 3</title>
+  </head>
+  <body class="mainjavascript">
+    <main>
     <nav>
-        <img src="./img/hacker.png" id="logo" />
-        <ul>
-          <li><a href="html-css.html">HTML/CSS</a></li>
-          <li><a href="javascript.html">Javascript</a></li>
-          <li><a href="php.html">PHP</a></li>
-          <li><a href="sql.html">SQL</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
+      <a href="./index.html"><img src="./img/hacker.png" id="logo" />
+      </a>
+      <ul>
+        <li><a href="hmtl-css.html">HTML/CSS</a></li>
+        <li><a href="Javascript.html">Javascript</a></li>
+        <li><a href="PHP.html">PHP</a></li>
+        <li><a href="SQL.html">SQL</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a  class="dropbtn">Leerjaar 2</a>
+            <div class="dropdown-content">
+              <a href="OOP">OOP</a>
+              <a href="Laravel">Laravel</a>
+              <a href="Testen">Testen</a>
+            </div>
+          </li>
+      </ul>
+    </nav>
+    
+    <main>
       <header>
-        <h1 class="wit">SQL</h1>
+        <h1 class="white title">
+          SQL
+        </h1>
       </header>
+    
+      <section>
+        <img class="sqlimg" src="./img/mysql.png" alt="SQL">
+        <div class="fullsqltext">
+          <h2 class="white">Wat is Javascript?</h2>
+          <p class="white sqltext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in velit placerat magna pulvinar porta sit amet vel
+            purus. Suspendisse potenti. Maecenas eu purus pharetra, efficitur lorem eget, facilisis risus. Proin pretium orci
+            bibendum blandit tempor. Fusce lacinia nisi quis iaculis cursus. Donec vehicula nisi eget orci pharetra, semper
+            scelerisque nulla varius. Etiam ut eros in libero condimentum aliquet non quis leo. Pellentesque sit amet fermentum
+            sem,
+            in dictum leo.
+          </p>
+        </div>
 
-      <main>
-        <section>
-          <header>
-            <h2 class="wit">Wat is SQL</h2>
-          </header>
-          <article>
-            <p class="wit">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <img src="./img/mysql.png">
-          </article>
-        </section>
-      </main>
-      <footer>Copyright Techniekcollege Rotterdam</footer>
-</body>
+      </section>
+
+    </main>
+
+
+<footer class="footer">
+  <p class="copyright">Copyright Techniek College Rotterdam</p>
+</footer>
+
+  </body>
 </html>
